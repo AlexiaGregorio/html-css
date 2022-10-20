@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fizesseicon.ico" type="image/x-icon">
+    <title>Imagens e Midias</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam sozinhas</h1>
+    <p>Aqui estarei testando colocar imagens com tamanhos diferentes usando &lt;picture&gt; e &lt;source:media:type&gt;</p>
+    <p>Veja a imagem abaixo de Chihiro:</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/chihiro500.jpeg" type="image/jpeg">
+        <source media="(max-width: 700px)" srcset="imagens/chihiro700.jpeg" type="image/jpeg">
+        <img src="imagens/chihiro1000.jpeg" alt="Imagem flexível">
+    </picture>
+    <p>Funcionou, agora vou tentar com outras imagens:</p>
+    <p>O Estranho Mundo de Jack:</p>
+        <picture>
+            <source media="(max-width: 500px)" srcset="imagens/jack500.jpeg" type="image/jpeg">
+            <source media="(max-width: 700px)" srcset="imagens/jack700.jpeg" type="image/jpeg">
+            <img src="imagens/jack1000.jpeg" alt="Imagem flexivel">
+        </picture>
+        <p>Coraline:</p>
+        <picture>
+            <source media="(max-width: 500px)" srcset="imagens/coraline500.jpeg" type="image/jpeg">
+            <source media="(max-width: 700px)" srcset="imagens/coraline700.jpeg" type="image/jpeg">
+            <img src="imagens/coraline1000.jpeg" alt="Imagem flexivel">
+        </picture>
+        <h2>Mídias</h2>
+        <p>Agora irei colocar mídias de duas maneiras</p>
+        <ol>
+            <li>Usando o código mais básico</li>
+            <audio src="midias/Teasing the King - Nathan Moore.mp3" controls></audio>
+            <li>Agora usando MPEG, OGG e WAV</li>
+            <audio preload="metadata" controls loop>
+                <source src="midias/Teasing the King - Nathan Moore.mp3" type="audio/MPEG">
+                <source src="midias/Teasing the King - Nathan Moore.mp3" type="audio/OGG">
+                <source src="midias/Teasing the King - Nathan Moore.mp3" type="audio/WAV">
+            </audio>
+            <li>Caso o seu navegador não consiga reproduzir o audio <a href="midias/Teasing the King - Nathan Moore.mp3">clique aqui</a> e faça o download do mp3.</li>
+        </ol>
+        <marquee behavior="" direction="left">Fim.</marquee>
+    
+</body>
+</html>
