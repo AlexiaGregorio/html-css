@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            background-color: black;
+            height: 100vh;
+            /*background-color: black;
             background-image: url(imagem/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
-            height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*Shorthand - Background
+
+            color > image > position > repeat > {size - tem que colocar separado, pq se não a imagem não fubnciona no site} > attachment
+        
+            */
+
+            background: black url(imagem/wallpaper002.jpg) center top no-repeat fixed;
             background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -27,7 +37,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam voluptatem officiis sint illum porro optio perferendis reprehenderit ipsam, officia facere culpa. Quaerat harum, fuga quos saepe illo voluptate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui deserunt earum quis voluptatem! Dignissimos dicta repudiandae quod harum quo quis, itaque temporibus, doloribus fugiat laboriosam, cupiditate minus corporis ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro atque debitis nostrum in tempore blanditiis, provident, voluptatibus nulla quasi id velit esse rem omnis ad? Esse autem doloribus similique?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam voluptatem officiis sint illum porro optio perferendis reprehenderit ipsam, officia facere culpa. Quaerat harum, fuga quos saepe illo voluptate doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui deserunt earum quis voluptatem! Dignissimos dicta repudiandae quod harum quo quis, itaque temporibus, doloribus fugiat laboriosam, cupiditate minus corporis ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro atque debitis nostrum in tempore blanditiis, provident, voluptatibus nulla quasi id velit esse rem omnis ad? Esse autem doloribus similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe consequatur excepturi quod. Voluptates, animi repellat quia, quod expedita, asperiores at unde rerum temporibus nisi modi! Quos mollitia nesciunt velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nisi dolore mollitia. Ipsam nulla aspernatur architecto in placeat aliquid, doloremque hic commodi, ratione magni est sed, voluptatem delectus voluptatum iste. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quasi incidunt blanditiis, sequi magnam repellat nobis? Molestias veniam itaque similique voluptates officiis porro omnis, alias ipsam blanditiis eaque modi ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum vel qui enim illo ea repudiandae deleniti cumque odit minus nisi libero et dicta, rem neque eius cum expedita commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error temporibus non ad consequuntur pariatur maxime labore minus assumenda architecto sed natus, velit id explicabo quos laborum ex vero magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut quam accusantium, cum at sed odit quibusdam repudiandae, ducimus harum nihil, saepe ratione! Unde commodi amet repellendus vitae quidem harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, velit quam minima, enim odio quidem et iusto deleniti quos eius consequuntur eum facilis omnis doloribus illo quis facere laudantium veniam?</p>
     </main>
     
 </body>
