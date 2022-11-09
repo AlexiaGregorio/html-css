@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Tabelas: Meu Teste</title>
     <link rel="shortcut icon" href="smiley-favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            margin: 3em;
+        }
+
+        h1 {
+            color: white;
+            text-align: justify;
         }
 
         table {
@@ -17,7 +24,7 @@
         }
 
         td, th {
-            border: 2px solid black;
+            border: 2px solid rgb(83, 82, 82);
             padding: 10px;
         }
 
@@ -26,7 +33,7 @@
             font-weight: bold;
             padding: 5px;
             background-color: lightgray;
-            border: 2px solid black;
+            border: 2px solid rgb(83, 82, 82);
         }
 
         thead, tfoot {
@@ -34,7 +41,11 @@
             color: white;
         }
         
-        tbody > tr:nth-child(2n) {
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
             background-color: lightgray;
         }
 
